@@ -1,7 +1,16 @@
+/* eslint-env node */
 import path from 'path'
 import typescript2 from 'rollup-plugin-typescript2'
 import replace from '@rollup/plugin-replace'
 import json from '@rollup/plugin-json'
+import { fileURLToPath } from 'url'
+import { createRequire } from 'module'
+import terser from '@rollup/plugin-terser'
+import { babel } from '@rollup/plugin-babel'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+const require = createRequire(import.meta.url)
 
 if (!process.env.TARGET) {
   throw new Error('TARGET package must be specified via --environment flag.')
@@ -116,6 +125,13 @@ function createConfig(format, output, plugins = []) {
   const nodePlugins =
     format !== 'cjs'
       ? [
+        babel({
+          babelHelpers: 'bundled',
+          include: ['**/node_modules/quill/**/*.js'],
+          exclude: ['**/node_modules/quill/dist/**'],
+          extensions: ['.js'],
+          presets: [['@babel/preset-env', { targets: { esmodules: true } }]],
+        }),
           require('@rollup/plugin-node-resolve').nodeResolve({
             preferBuiltins: true,
           }),
@@ -245,7 +261,6 @@ function createProductionConfig(format) {
 }
 
 function createMinifiedConfig(format) {
-  const { terser } = require('rollup-plugin-terser')
   return createConfig(
     format,
     {

@@ -1,3 +1,6 @@
+> 🧩 **Maintained fork** of [vueup/vue-quill](https://github.com/vueup/vue-quill)  
+> ✨ Updated for **Quill v2** compatibility.
+
 <p align="center">
   <a href="https://vueup.github.io/vue-quill/" target="_blank" rel="noopener noreferrer">
     <img height="120" src="https://vueup.github.io/vue-quill/quill.svg" alt="Vue + Quill logo">

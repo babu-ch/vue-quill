@@ -35,7 +35,8 @@ npm run build -- vue-quill --formats cjs
   const devOnly: boolean = args.devOnly || args.d
   const prodOnly: boolean = !devOnly && (args.prodOnly || args.p)
   const sourceMap: boolean = args.sourcemap || args.s
-  const isRelease: boolean = args.release || (args.nextVersion && args.nextVersion !== '')
+  const isRelease: boolean =
+    args.release || (args.nextVersion && args.nextVersion !== '')
   const hasTypes: boolean = args.t || args.types || isRelease
   const buildAssets: boolean = args.assets || isRelease
   const buildAllMatching: boolean = args.all || args.a
@@ -67,13 +68,16 @@ npm run build -- vue-quill --formats cjs
   }
 
   async function build(target: string) {
-    const rollupConfig = path.resolve(rootDir, 'rollup.config.js')
+    const rollupConfig = path.resolve(rootDir, 'rollup.config.mjs')
     const pkgDir = getPackageDir(target)
     const pkg = getPackageJson(target)
 
     // only build published packages for release
     if (isRelease && pkg.private) {
-      logger.warning(target, `Skip private package (${target}) in release build`)
+      logger.warning(
+        target,
+        `Skip private package (${target}) in release build`
+      )
       return
     }
 
