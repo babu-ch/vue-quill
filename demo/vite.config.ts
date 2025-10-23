@@ -8,7 +8,7 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: '@vueup/vue-quill',
+        find: 'vue-quill-next',
         replacement: path.resolve(__dirname, '../packages/vue-quill/src'),
       },
     ],

@@ -1,7 +1,7 @@
 <!-- eslint-disable prettier/prettier -->
 <script setup lang="ts">
 import BlotFormatter from 'quill-blot-formatter'
-import { Delta } from '@vueup/vue-quill'
+import { Delta } from 'vue-quill-next'
 import { ref } from 'vue'
 
 const modules = {

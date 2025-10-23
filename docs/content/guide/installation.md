@@ -15,12 +15,12 @@ VueQuill ships as a UMD module that is accessible in the browser. When loaded in
 <script src="https://unpkg.com/vue@next"></script>
 
 <!-- use the latest VueQuill release -->
-<script src="https://unpkg.com/@vueup/vue-quill@latest"></script>
-<link rel="stylesheet" href="https://unpkg.com/@vueup/vue-quill@latest/dist/vue-quill.snow.prod.css">
+<script src="https://unpkg.com/vue-quill-next@latest"></script>
+<link rel="stylesheet" href="https://unpkg.com/vue-quill-next@latest/dist/vue-quill.snow.prod.css">
 
 <!-- or point to a specific VueQuill release -->
-<script src="https://unpkg.com/@vueup/vue-quill@version"></script>
-<link rel="stylesheet" href="https://unpkg.com/@vueup/vue-quill@version/dist/vue-quill.snow.prod.css">
+<script src="https://unpkg.com/vue-quill-next@version"></script>
+<link rel="stylesheet" href="https://unpkg.com/vue-quill-next@version/dist/vue-quill.snow.prod.css">
 ```
 
 ::: warning 
@@ -32,9 +32,9 @@ For production, we recommend linking to a specific version number and build to a
 Use the package manager [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) to install VueQuill.
 
 ```bash
-npm install @vueup/vue-quill@latest --save
+npm install vue-quill-next@latest --save
 # OR
-yarn add @vueup/vue-quill@latest
+yarn add vue-quill-next@latest
 ```
 
 </div>

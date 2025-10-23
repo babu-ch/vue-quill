@@ -1,5 +1,5 @@
 import { h, createApp } from 'vue'
-import { QuillEditor } from '@vueup/vue-quill'
+import { QuillEditor } from 'vue-quill-next'
 
 // The bare minimum code required for rendering something to the screen
 const app = createApp({

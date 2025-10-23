@@ -12,9 +12,9 @@ export { QuillEditor, Quill }
 
 ~~~ javascript
 // ES6
-import { QuillEditor, Quill } from '@vueup/vue-quill';
+import { QuillEditor, Quill } from 'vue-quill-next';
 
 // CommonJS
-const { QuillEditor, Quill } = require('@vueup/vue-quill');
+const { QuillEditor, Quill } = require('vue-quill-next');
 ~~~
 

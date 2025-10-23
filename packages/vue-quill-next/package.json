@@ -1,12 +1,12 @@
 {
   "name": "vue-quill-next",
   "version": "1.0.0",
-  "description": "Maintained fork of @vueup/vue-quill, updated for Quill v2 compatibility.",
+  "description": "Maintained fork of vue-quill-next, updated for Quill v2 compatibility.",
   "main": "index.js",
-  "module": "dist/vue-quill.esm-bundler.js",
-  "unpkg": "dist/vue-quill.global.prod.js",
-  "jsdelivr": "dist/vue-quill.global.prod.js",
-  "types": "dist/vue-quill.d.ts",
+  "module": "dist/vue-quill-next.esm-bundler.js",
+  "unpkg": "dist/vue-quill-next.global.prod.js",
+  "jsdelivr": "dist/vue-quill-next.global.prod.js",
+  "types": "dist/vue-quill-next.d.ts",
   "files": [
     "index.js",
     "dist"

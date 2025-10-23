@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 **Version**
-@vueup/vue-quill version [e.g. 1.0.0-beta.5]
+vue-quill-next version [e.g. 1.0.0-beta.5]
 
 **Describe the bug**
 A clear and concise description of what the bug is.

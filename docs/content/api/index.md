@@ -78,7 +78,7 @@
 
   ~~~ js
   import { createApp } from 'vue'
-  import { QuillEditor } from '@vueup/vue-quill'
+  import { QuillEditor } from 'vue-quill-next'
 
   const app = createApp()
   // define your options
