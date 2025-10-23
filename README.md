@@ -4,6 +4,14 @@
 > 
 > If you have @types/quill installed, uninstall it, as it is no longer needed
 
+# install
+
+```sh
+npm i vue-quill-next
+```
+
+https://www.npmjs.com/package/vue-quill-next
+
 <p align="center">
   <a href="https://vueup.github.io/vue-quill/" target="_blank" rel="noopener noreferrer">
     <img height="120" src="https://vueup.github.io/vue-quill/quill.svg" alt="Vue + Quill logo">
