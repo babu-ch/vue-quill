@@ -5,7 +5,7 @@
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
-import { QuillEditor, Delta } from '@vueup/vue-quill'
+import { QuillEditor, Delta } from 'vue-quill-next'
 
 export default defineComponent({
   components: {

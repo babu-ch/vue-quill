@@ -8,13 +8,13 @@ import './styles/vars.css'
 
 const QuillEditor = defineAsyncComponent({
   loader: () =>
-    import('@vueup/vue-quill').then((VueQuill) => VueQuill.QuillEditor),
+    import('vue-quill-next').then((VueQuill) => VueQuill.QuillEditor),
   loadingComponent: Loading,
 })
 
-import '@vueup/vue-quill/dist/vue-quill.core.css' // import styles
-import '@vueup/vue-quill/dist/vue-quill.bubble.css' // for bubble theme
-import '@vueup/vue-quill/dist/vue-quill.snow.css' // for snow theme
+import 'vue-quill-next/dist/vue-quill.core.css' // import styles
+import 'vue-quill-next/dist/vue-quill.bubble.css' // for bubble theme
+import 'vue-quill-next/dist/vue-quill.snow.css' // for snow theme
 
 export default {
   ...Theme,

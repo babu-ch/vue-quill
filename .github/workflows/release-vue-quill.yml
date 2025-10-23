@@ -1,18 +1,18 @@
-name: Release @vueup/vue-quill
+name: Release vue-quill-next
 
-on: 
-  push: 
-    branches: 
+on:
+  push:
+    branches:
       - alpha
       - beta
       - master
-    paths: 
-      - 'packages/vue-quill/**'
-jobs: 
-  release: 
+    paths:
+      - '../../packages/vue-quill-next/**'
+jobs:
+  release:
     name: Build and release
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
@@ -25,6 +25,6 @@ jobs:
       - name: Release package
         working-directory: packages/vue-quill
         run: npx ts-node ../../scripts/release.ts vue-quill
-        env: 
+        env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

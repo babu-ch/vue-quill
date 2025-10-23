@@ -11,11 +11,11 @@
   Rich Text Editor Component for Vue 3.
 </h3>
 <p align="center">
-  <a href="https://www.npmjs.com/package/@vueup/vue-quill" title="Version" target="_blank" rel="noopener noreferrer">
-    <img alt="npm (tag)" src="https://img.shields.io/npm/v/@vueup/vue-quill">
+  <a href="https://www.npmjs.com/package/vue-quill-next" title="Version" target="_blank" rel="noopener noreferrer">
+    <img alt="npm (tag)" src="https://img.shields.io/npm/v/vue-quill-next">
   </a>
-  <a href="https://www.npmjs.com/package/@vueup/vue-quill" title="License" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/npm/l/@vueup/vue-quill" alt="License">
+  <a href="https://www.npmjs.com/package/vue-quill-next" title="License" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/npm/l/vue-quill-next" alt="License">
   </a>
   <a href="https://github.com/vueup/vue-quill/actions" title="Checks" target="_blank" rel="noopener noreferrer">
     <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/vueup/vue-quill/release-vue-quill.yml?branch=master&logo=github">

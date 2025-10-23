@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { QuillEditor } from '@vueup/vue-quill'
+import { QuillEditor } from 'vue-quill-next'
 const inputValue = ref('<h1>This is header</h1><p>This is paragraph</p>')
 </script>
 

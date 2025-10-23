@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 // VueQuill
-import { QuillEditor } from '@vueup/vue-quill'
-import '@vueup/vue-quill/dist/vue-quill.snow.css'
+import { QuillEditor } from 'vue-quill-next'
+import 'vue-quill-next/dist/vue-quill.snow.css'
 // VueHighlightJS
 import VueHighlightJS from 'vue3-highlightjs'
 import 'highlight.js/styles/solarized-light.css'

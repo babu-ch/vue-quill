@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Delta } from '@vueup/vue-quill'
+import { Delta } from 'vue-quill-next'
 const contentDelta = ref<Delta>(
   new Delta([
     { insert: 'Gandalf', attributes: { bold: true } },

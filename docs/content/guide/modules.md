@@ -22,9 +22,9 @@ yarn add quill-blot-formatter
 
 <script>
 import { ref, defineComponent } from 'vue'
-import { QuillEditor } from '@vueup/vue-quill'
+import { QuillEditor } from 'vue-quill-next'
 import BlotFormatter from 'quill-blot-formatter'
-import '@vueup/vue-quill/dist/vue-quill.snow.css'
+import 'vue-quill-next/dist/vue-quill.snow.css'
 
 export default defineComponent({
   components: {
@@ -58,8 +58,8 @@ npm install quill-image-uploader --save
 
 <script>
 import { ref, defineComponent } from 'vue'
-import { QuillEditor } from '@vueup/vue-quill'
-import '@vueup/vue-quill/dist/vue-quill.snow.css'
+import { QuillEditor } from 'vue-quill-next'
+import 'vue-quill-next/dist/vue-quill.snow.css'
 import ImageUploader from 'quill-image-uploader';
 import axios from '../lib/axios';
 
