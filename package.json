@@ -3,7 +3,7 @@
   "version": "0.0.0-development",
   "description": "Vue 3 rich text editor",
   "homepage": "https://vueup.github.io/vue-quill/",
-  "bugs": "https://github.com/vueup/vue-quill/issues",
+  "bugs": "https://github.com/babu-ch/vue-quill/issues",
   "license": "MIT",
   "author": "Ahmad Luthfi Masruri",
   "funding": [
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/vueup/vue-quill.git"
+    "url": "https://github.com/babu-ch/vue-quill"
   },
   "types": "test-dts/index.d.ts",
   "tsd": {

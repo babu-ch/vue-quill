@@ -28,13 +28,13 @@ https://www.npmjs.com/package/vue-quill-next
   <a href="https://www.npmjs.com/package/vue-quill-next" title="License" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/npm/l/vue-quill-next" alt="License">
   </a>
-  <a href="https://github.com/vueup/vue-quill/actions" title="Checks" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/babu-ch/vue-quill/actions" title="Checks" target="_blank" rel="noopener noreferrer">
     <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/vueup/vue-quill/release-vue-quill.yml?branch=master&logo=github">
   </a>
-  <a href="https://github.com/vueup/vue-quill" title="Last commit" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/babu-ch/vue-quill" title="Last commit" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/github/last-commit/vueup/vue-quill?logo=github" alt="Last commit">
   </a>
-  <a href="https://github.com/vueup/vue-quill" title="Github Repo Stars" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/babu-ch/vue-quill" title="Github Repo Stars" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/github/stars/vueup/vue-quill?style=social" alt="Github Repo Stars">
   </a>
 </p>
@@ -77,12 +77,12 @@ https://www.npmjs.com/package/vue-quill-next
 - [x] Release `alpha` version
 - [x] Release `beta` version
 - [x] Stable `v1.0.0` release
-- [x] Enhance Typescript support with Vue 3
+- [x] Enhance TypeScript support with Vue 3
 - [ ] Update the Documentation with more examples and more information
 
 ## 👏 Contributing
 
-Pull requests are welcome. For major changes, please create a [new discussion](https://github.com/vueup/vue-quill/discussions) first about what you would like to change.
+Pull requests are welcome. For major changes, please create a [new discussion](https://github.com/babu-ch/vue-quill) first about what you would like to change.
 
 ## 📝 License
 
