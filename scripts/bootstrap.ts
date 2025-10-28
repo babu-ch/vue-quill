@@ -40,9 +40,9 @@
         author: 'Ahmad Luthfi Masruri',
         license: 'MIT',
         bugs: {
-          url: 'https://github.com/vueup/vue-quill/issues',
+          url: 'https://github.com/babu-ch/vue-quill/issues',
         },
-        homepage: `https://github.com/vueup/vue-quill/tree/dev/packages/${shortName}#readme`,
+        homepage: `https://github.com/babu-ch/vue-quill/tree/dev/packages/${shortName}#readme`,
       }
       fs.writeFileSync(pkgPath, JSON.stringify(json, null, 2))
     }
@@ -52,7 +52,11 @@
       fs.writeFileSync(readmePath, `# ${name}`)
     }
 
-    const apiExtractorConfigPath = path.join(packagesDir, shortName, `api-extractor.json`)
+    const apiExtractorConfigPath = path.join(
+      packagesDir,
+      shortName,
+      `api-extractor.json`
+    )
     if (args.force || !fs.existsSync(apiExtractorConfigPath)) {
       fs.writeFileSync(
         apiExtractorConfigPath,
@@ -68,7 +72,11 @@
       )
     }
 
-    const assetsConfigPath = path.join(packagesDir, shortName, `assets.config.json`)
+    const assetsConfigPath = path.join(
+      packagesDir,
+      shortName,
+      `assets.config.json`
+    )
     if (args.force || !fs.existsSync(assetsConfigPath)) {
       fs.writeFileSync(
         assetsConfigPath,

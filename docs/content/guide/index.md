@@ -26,7 +26,7 @@ Quill supports all modern browsers on desktops, tablets, and phones. Experience 
 
 ## Community
 
-If you have questions or need help, reach out to the community at [GitHub Discussions](https://github.com/vueup/vue-quill/discussions).
+If you have questions or need help, reach out to the community at [GitHub Discussions](https://github.com/babu-ch/vue-quill/discussions).
 
 <!-- TextReplacer used to replace text after component mounted -->
 <ClientOnly>

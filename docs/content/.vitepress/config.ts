@@ -29,12 +29,12 @@ export default defineConfig({
 
     editLink: {
       pattern:
-        'https://github.com/vueup/vue-quill/edit/beta/docs/content/:path',
+        'https://github.com/babu-ch/vue-quill/edit/beta/docs/content/:path',
       text: 'Edit this page on GitHub',
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vueup/vue-quill' },
+      { icon: 'github', link: 'https://github.com/babu-ch/vue-quill' },
     ],
 
     algolia: {
