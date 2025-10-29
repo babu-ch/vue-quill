@@ -39,6 +39,7 @@
   "scripts": {
     "dev": "npx ts-node scripts/dev.ts",
     "build": "npx ts-node scripts/build.ts",
+    "build:all": "npm run build -- vue-quill --types --assets",
     "size": "npx ts-node scripts/build.ts vue-quill size-check -p -f global --assets",
     "lint": "eslint --ext .ts packages/*/src/**/*.ts",
     "format": "prettier --write --parser typescript \"packages/**/*.ts?(x)\"",
