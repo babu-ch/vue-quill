@@ -20,10 +20,10 @@ jobs:
       - name: Install root deps
         run: npm ci
       - name: Install package deps
-        working-directory: packages/vue-quill
+        working-directory: packages/vue-quill-next
         run: npm ci
       - name: Release package
-        working-directory: packages/vue-quill
+        working-directory: packages/vue-quill-next
         run: npx ts-node ../../scripts/release.ts vue-quill
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
