@@ -1,25 +1,25 @@
 name: Deploy docs
 
-on: 
-  push: 
-    branches: 
+on:
+  push:
+    branches:
       - master
       - beta
       - alpha
     paths:
       - 'docs/**'
 
-jobs: 
-  deploy: 
+jobs:
+  deploy:
     name: Build and deploy
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-        with: 
+        with:
           node-version: '14.x'
       - run: npm ci
-      - working-directory: packages/vue-quill
+      - working-directory: packages/vue-quill-next
         run: npm ci
       - name: Build docs
         working-directory: docs
