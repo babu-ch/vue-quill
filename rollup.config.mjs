@@ -29,7 +29,7 @@ let hasTSChecked = false
 
 let banner = `/*!
  * ${pkg.buildOptions.name} ${pkg.name} v${masterVersion}
- * ${pkg.homepage || 'https://github.com/vueup/vue-quill'}
+ * ${pkg.homepage || 'https://github.com/babu-ch/vue-quill'}
  * `
 
 banner += pkg.dependencies?.quill?.match(/\d(.*)/)[0]

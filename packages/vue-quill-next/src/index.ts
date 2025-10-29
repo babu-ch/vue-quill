@@ -1,7 +1,7 @@
 /*
  * VueQuill index.ts
  * Author: luthfimasruri@gmail.com
- * Github: https://github.com/vueup/vue-quill.git
+ * Github: https://github.com/babu-ch/vue-quill.git
  * License: MIT
  */
 

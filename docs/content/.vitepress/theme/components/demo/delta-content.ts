@@ -238,7 +238,7 @@ export const deltaContent = {
     },
     {
       attributes: {
-        link: 'https://github.com/vueup/',
+        link: 'https://github.com/babu-ch/vue-quill',
       },
       insert: 'vueup',
     },

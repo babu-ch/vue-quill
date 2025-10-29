@@ -17,7 +17,7 @@ hero:
       link: /guide/
     - theme: alt
       text: ⭐ Github
-      link: https://github.com/vueup/vue-quill
+      link: https://github.com/babu-ch/vue-quill
 
 features:
   - icon: 💚
