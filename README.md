@@ -12,6 +12,32 @@ npm i vue-quill-next
 
 https://www.npmjs.com/package/vue-quill-next
 
+
+# usage
+
+main.ts
+```ts
+import { createApp } from 'vue'
+import App from './App.vue'
+import {QuillEditor} from 'vue-quill-next'
+import 'vue-quill-next/dist/vue-quill.snow.css';
+
+const app = createApp(App)
+
+app.component('QuillEditor', QuillEditor);
+
+app.mount('#app')
+```
+
+App.vue
+```html
+<div id="app">
+  <quill-editor theme="snow" />
+</div>
+```
+
+
+
 <p align="center">
   <a href="https://vueup.github.io/vue-quill/" target="_blank" rel="noopener noreferrer">
     <img height="120" src="https://vueup.github.io/vue-quill/quill.svg" alt="Vue + Quill logo">
