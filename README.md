@@ -39,8 +39,8 @@ App.vue
 
 
 <p align="center">
-  <a href="https://vueup.github.io/vue-quill/" target="_blank" rel="noopener noreferrer">
-    <img height="120" src="https://vueup.github.io/vue-quill/quill.svg" alt="Vue + Quill logo">
+  <a href="https://babu-ch.github.io/vue-quill/" target="_blank" rel="noopener noreferrer">
+    <img height="120" src="https://babu-ch.github.io/vue-quill/quill.svg" alt="Vue + Quill logo">
   </a>
 </p>
 <h1 align="center">VueQuill</h1>
@@ -65,11 +65,11 @@ App.vue
   </a>
 </p>
 <p align="center">
-  <a href="https://vueup.github.io/vue-quill/#demo" title="VueQuill Demo" target="_blank" rel="noopener noreferrer">
+  <a href="https://babu-ch.github.io/vue-quill/#demo" title="VueQuill Demo" target="_blank" rel="noopener noreferrer">
     <img src="https://user-images.githubusercontent.com/6185447/111898684-33761b00-8a5a-11eb-9458-372c0185f576.png" alt="VueQuill Editor">
   </a>
   <br>
-  <a href="https://vueup.github.io/vue-quill/#demo" title="Live Demo" target="_blank" rel="noopener noreferrer">👀 See a Live Demo</a>
+  <a href="https://babu-ch.github.io/vue-quill/#demo" title="Live Demo" target="_blank" rel="noopener noreferrer">👀 See a Live Demo</a>
 </p>
 
 ## 🔎 Overview
@@ -82,21 +82,21 @@ App.vue
 
 ## 📚 Documentation
 
-- **[📘 Guide](https://vueup.github.io/vue-quill/guide/)**
-  - [🚀 Introduction](https://vueup.github.io/vue-quill/guide/)
-  - [⚙️ Installation](https://vueup.github.io/vue-quill/guide/installation.html)
-  - [💡 Usage](https://vueup.github.io/vue-quill/guide/usage.html)
-  - [🎨 Themes](https://vueup.github.io/vue-quill/guide/themes.html)
-  - [🚥 Toolbar](https://vueup.github.io/vue-quill/guide/toolbar.html)
-  - [📦 Modules](https://vueup.github.io/vue-quill/guide/modules.html)
-  - [🛠️ Options](https://vueup.github.io/vue-quill/guide/options.html)
+- **[📘 Guide](https://babu-ch.github.io/vue-quill/guide/)**
+  - [🚀 Introduction](https://babu-ch.github.io/vue-quill/guide/)
+  - [⚙️ Installation](https://babu-ch.github.io/vue-quill/guide/installation.html)
+  - [💡 Usage](https://babu-ch.github.io/vue-quill/guide/usage.html)
+  - [🎨 Themes](https://babu-ch.github.io/vue-quill/guide/themes.html)
+  - [🚥 Toolbar](https://babu-ch.github.io/vue-quill/guide/toolbar.html)
+  - [📦 Modules](https://babu-ch.github.io/vue-quill/guide/modules.html)
+  - [🛠️ Options](https://babu-ch.github.io/vue-quill/guide/options.html)
   
-- **[🧰 APIs](https://vueup.github.io/vue-quill/api/)**
-  - [📌 Props](https://vueup.github.io/vue-quill/api/)
-  - [⚡ Events](https://vueup.github.io/vue-quill/api/events.html)
-  - [📢 Methods](https://vueup.github.io/vue-quill/api/methods.html)
-  - [🔌 Slots](https://vueup.github.io/vue-quill/api/slots.html)
-  - [↗️ Export](https://vueup.github.io/vue-quill/api/export.html)
+- **[🧰 APIs](https://babu-ch.github.io/vue-quill/api/)**
+  - [📌 Props](https://babu-ch.github.io/vue-quill/api/)
+  - [⚡ Events](https://babu-ch.github.io/vue-quill/api/events.html)
+  - [📢 Methods](https://babu-ch.github.io/vue-quill/api/methods.html)
+  - [🔌 Slots](https://babu-ch.github.io/vue-quill/api/slots.html)
+  - [↗️ Export](https://babu-ch.github.io/vue-quill/api/export.html)
 
 ## ☑️ To do list
 
