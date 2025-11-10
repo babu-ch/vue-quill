@@ -65,7 +65,7 @@ npm or yarn is the recommended installation method when you are using [Single Fi
   const latestRelease = ref('')
   const latestReleaseVersion = ref('')
   onMounted(async () => {
-    latestRelease.value = await getLatestRelease('vueup', 'vue-quill').then(data => data)
-    latestReleaseVersion.value = await getLatestReleaseVersion('vueup', 'vue-quill').then(data => data)
+    latestRelease.value = await getLatestRelease('babu-ch', 'vue-quill').then(data => data)
+    latestReleaseVersion.value = await getLatestReleaseVersion('babu-ch', 'vue-quill').then(data => data)
   })
 </script>
