@@ -12,7 +12,7 @@ export const getLatestReleaseVersion = async (
     .then((release) => {
       if (release.tag_name) {
         const latestVersion =
-          release.tag_name.match(/(\d+\.\d+)[\-\.\da-zA-Z]+/)[0] ?? ''
+          release.tag_name.match(/(\d+\.\d+)[\-\.\da-zA-Z]+/)?.[0] ?? 'latest'
         if (latestVersion !== '') {
           setWithExpiry(
             'latestVersion',

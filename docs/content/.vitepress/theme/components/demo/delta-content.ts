@@ -22,7 +22,7 @@ export const deltaContent = {
         bold: true,
         color: '#6b24b2',
         background: '#ffffff',
-        link: 'https://vueup.github.io/vue-quill/',
+        link: 'https://babu-ch.github.io/vue-quill/',
       },
       insert: 'VueQuill',
     },
@@ -201,7 +201,7 @@ export const deltaContent = {
     },
     {
       attributes: {
-        link: 'https://vueup.github.io/vue-quill/guide/',
+        link: 'https://babu-ch.github.io/vue-quill/guide/',
       },
       insert: 'Getting Started',
     },
@@ -210,7 +210,7 @@ export const deltaContent = {
     },
     {
       attributes: {
-        link: 'https://vueup.github.io/vue-quill/#demo',
+        link: 'https://babu-ch.github.io/vue-quill/#demo',
       },
       insert: 'See Live Demo',
     },

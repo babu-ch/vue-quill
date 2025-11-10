@@ -2,7 +2,7 @@
   "private": true,
   "version": "0.0.0-development",
   "description": "Vue 3 rich text editor",
-  "homepage": "https://vueup.github.io/vue-quill/",
+  "homepage": "https://babu-ch.github.io/vue-quill/",
   "bugs": "https://github.com/babu-ch/vue-quill/issues",
   "license": "MIT",
   "author": "Ahmad Luthfi Masruri",
