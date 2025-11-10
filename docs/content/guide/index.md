@@ -45,6 +45,6 @@ If you have questions or need help, reach out to the community at [GitHub Discus
 
   const latestReleaseVersion = ref('')
   onMounted(async () => {
-    latestReleaseVersion.value = await getLatestReleaseVersion('vueup', 'vue-quill').then(data => data)
+    latestReleaseVersion.value = await getLatestReleaseVersion('babu-ch', 'vue-quill').then(data => data)
   })
 </script>
