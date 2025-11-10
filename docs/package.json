@@ -19,10 +19,10 @@
     "tailwindcss": "^3.1.6",
     "types-quill-delta": "^1.0.0",
     "vitepress": "^1.0.0-alpha.4",
-    "vue": "^3.2.37"
+    "vue": "^3.5.24"
   },
   "dependencies": {
-    "vue-quill-next": "1.0.2",
-    "quill-blot-formatter": "^1.0.5"
+    "quill-blot-formatter": "^1.0.5",
+    "vue-quill-next": "1.0.2"
   }
 }
