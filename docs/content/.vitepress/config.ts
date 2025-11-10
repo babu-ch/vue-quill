@@ -2,9 +2,9 @@ import 'dotenv/config'
 import { defineConfig } from 'vitepress'
 
 const ogDescription = 'VueQuill Rich Text Editor for Vue 3'
-const ogImage = 'https://vueup.github.io/vue-quill/og-image.png'
+const ogImage = 'https://babu-ch.github.io/vue-quill/og-image.png'
 const ogTitle = 'VueQuill'
-const ogUrl = 'https://vueup.github.io/vue-quill/'
+const ogUrl = 'https://babu-ch.github.io/vue-quill/'
 
 export default defineConfig({
   base: '/vue-quill/',
