@@ -17,13 +17,13 @@ import type Toolbar from 'quill/modules/toolbar'
 type TextChangeHandler = (
   delta: Delta,
   oldDelta: Delta,
-  source: EmitterSource
+  source: EmitterSource,
 ) => void
 
 type SelectionChangeHandler = (
   range: Range,
   oldRange: Range,
-  source: EmitterSource
+  source: EmitterSource,
 ) => void
 
 type EditorChangeHandler = (
@@ -155,7 +155,7 @@ export const QuillEditor = defineComponent({
         'mousedown',
         (e: MouseEvent) => {
           e.preventDefault()
-        }
+        },
       )
       // Emit ready event
       ctx.emit('ready', quill)
@@ -197,14 +197,14 @@ export const QuillEditor = defineComponent({
         clientOptions.modules = Object.assign(
           {},
           clientOptions.modules,
-          modules
+          modules,
         )
       }
       return Object.assign(
         {},
         props.globalOptions,
         props.options,
-        clientOptions
+        clientOptions,
       )
     }
 
@@ -214,7 +214,7 @@ export const QuillEditor = defineComponent({
 
     const deltaHasValuesOtherThanRetain = (delta: Delta): boolean => {
       return Object.values(delta.ops).some(
-        (v) => !v.retain || Object.keys(v).length !== 1
+        (v) => !v.retain || Object.keys(v).length !== 1,
       )
     }
 
@@ -233,7 +233,7 @@ export const QuillEditor = defineComponent({
           internalModel
         ) {
           return !deltaHasValuesOtherThanRetain(
-            internalModel.diff(against as Delta)
+            internalModel.diff(against as Delta),
           )
         }
       }
@@ -243,7 +243,7 @@ export const QuillEditor = defineComponent({
     const handleTextChange: TextChangeHandler = (
       delta: Delta,
       oldContents: Delta,
-      source: EmitterSource
+      source: EmitterSource,
     ) => {
       internalModel = maybeClone(getContents() as string | Delta)
       // Update v-model:content when text changes
@@ -257,7 +257,7 @@ export const QuillEditor = defineComponent({
     const handleSelectionChange: SelectionChangeHandler = (
       range: Range,
       oldRange: Range,
-      source: EmitterSource
+      source: EmitterSource,
     ) => {
       // Set isEditorFocus if quill.hasFocus()
       isEditorFocus.value = !!quill?.hasFocus()
@@ -265,7 +265,9 @@ export const QuillEditor = defineComponent({
     }
 
     watch(isEditorFocus, (focus) => {
+      // eslint-disable-next-line vue/no-ref-as-operand
       if (focus) ctx.emit('focus', editor)
+      // eslint-disable-next-line vue/no-ref-as-operand
       else ctx.emit('blur', editor)
     })
 
@@ -275,13 +277,13 @@ export const QuillEditor = defineComponent({
             name: 'text-change',
             delta: Delta,
             oldContents: Delta,
-            source: EmitterSource
+            source: EmitterSource,
           ]
         | [
             name: 'selection-change',
             range: Range,
             oldRange: Range,
-            source: EmitterSource
+            source: EmitterSource,
           ]
     ) => {
       if (args[0] === 'text-change')
@@ -327,7 +329,7 @@ export const QuillEditor = defineComponent({
 
     const setContents = (
       content: ContentPropType,
-      source: EmitterSource = 'api'
+      source: EmitterSource = 'api',
     ) => {
       const normalizedContent = !content
         ? props.contentType === 'delta'
@@ -389,14 +391,14 @@ export const QuillEditor = defineComponent({
         }
         setContents(newContent)
       },
-      { deep: true }
+      { deep: true },
     )
 
     watch(
       () => props.enable,
       (newValue) => {
         if (quill) quill.enable(newValue)
-      }
+      },
     )
 
     return {
