@@ -39,7 +39,8 @@ export default defineComponent({
         { insert: 'Grey', attributes: { color: '#ccc' } },
       ])
     )
-    const contentHTML = ref('<h1>This is html header</h1>')
+    // Quill v1 format HTML (without data-list attribute)
+    const contentHTML = ref('<ul><li>test item 1</li><li>test item 2</li></ul>')
     const contentText = ref('This is just plain text')
 
     const update = () => {

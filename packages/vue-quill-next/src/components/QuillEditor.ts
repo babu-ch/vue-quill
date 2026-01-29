@@ -359,11 +359,14 @@ export const QuillEditor = defineComponent({
     }
 
     const setHTML = (html: string) => {
-      if (quill) quill.root.innerHTML = html
+      if (quill) {
+        const delta = quill.clipboard.convert({ html })
+        quill.setContents(delta, 'api')
+      }
     }
 
     const pasteHTML = (html: string, source: EmitterSource = 'api') => {
-      const delta = quill?.clipboard.convert(html as {})
+      const delta = quill?.clipboard.convert({ html })
       if (delta) quill?.setContents(delta, source)
     }
 
