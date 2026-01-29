@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { describe, it, expect, beforeEach, vi } from 'vitest'
 import { mount } from '@vue/test-utils'
 import { QuillEditor } from '../src/components/QuillEditor'
@@ -10,6 +9,7 @@ const { mockSetContents, mockClipboardConvert } = vi.hoisted(() => ({
 }))
 
 vi.mock('quill', () => {
+  /* eslint-disable-next-line no-unused-vars */
   function MockQuill(this: Record<string, unknown>) {
     this.root = { innerHTML: '' }
     this.clipboard = { convert: mockClipboardConvert }
@@ -38,6 +38,7 @@ describe('QuillEditor', () => {
       await nextTick()
 
       const quillEditor = wrapper.vm as ComponentPublicInstance & {
+        /* eslint-disable-next-line no-unused-vars */
         setHTML: (html: string) => void
       }
 
@@ -69,6 +70,7 @@ describe('QuillEditor', () => {
       await nextTick()
 
       const quillEditor = wrapper.vm as ComponentPublicInstance & {
+        /* eslint-disable-next-line no-unused-vars */
         pasteHTML: (html: string, source?: string) => void
       }
 
