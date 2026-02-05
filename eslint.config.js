@@ -2,6 +2,7 @@ import js from '@eslint/js'
 import tseslint from '@typescript-eslint/eslint-plugin'
 import tsparser from '@typescript-eslint/parser'
 import pluginVue from 'eslint-plugin-vue'
+import vueParser from 'vue-eslint-parser'
 import globals from 'globals'
 
 export default [
@@ -14,10 +15,33 @@ export default [
   ...pluginVue.configs['flat/recommended'],
 
   {
-    files: ['**/*.js', '**/*.ts', '**/*.vue'],
+    files: ['**/*.vue'],
     plugins: {
       '@typescript-eslint': tseslint,
-      vue: pluginVue,
+    },
+    languageOptions: {
+      ecmaVersion: 12,
+      sourceType: 'module',
+      parser: vueParser,
+      parserOptions: {
+        parser: tsparser,
+      },
+      globals: {
+        ...globals.browser,
+        ...globals.es2021,
+      },
+    },
+    rules: {
+      '@typescript-eslint/ban-types': 'off',
+      'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+      'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    },
+  },
+
+  {
+    files: ['**/*.js', '**/*.ts'],
+    plugins: {
+      '@typescript-eslint': tseslint,
     },
     languageOptions: {
       ecmaVersion: 12,

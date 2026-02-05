@@ -1,4 +1,3 @@
-<!-- eslint-disable prettier/prettier -->
 <script setup lang="ts">
 import BlotFormatter from 'quill-blot-formatter'
 import { Delta } from 'vue-quill-next'

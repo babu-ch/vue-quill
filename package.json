@@ -26,11 +26,11 @@
   },
   "lint-staged": {
     "*.js": [
-      "prettier --write"
+      "oxfmt --write"
     ],
     "*.ts?(x)": [
       "eslint",
-      "prettier --parser=typescript --write"
+      "oxfmt --write"
     ]
   },
   "engines": {
@@ -42,7 +42,7 @@
     "build:all": "npm run build -- vue-quill --types --assets",
     "size": "npx ts-node scripts/build.ts vue-quill size-check -p -f global --assets",
     "lint": "eslint --ext .ts packages/*/src/**/*.ts",
-    "format": "prettier --write --parser typescript \"packages/**/*.ts?(x)\"",
+    "format": "oxfmt --write \"packages/**/*.ts?(x)\"",
     "release": "npx ts-node scripts/release.ts",
     "assets:dev": "npm run assets:build && npx ts-node scripts/devAssets.ts",
     "assets:build": "npx ts-node scripts/buildAssets.ts",
@@ -73,7 +73,6 @@
     "@typescript-eslint/eslint-plugin": "^8.48.1",
     "@typescript-eslint/parser": "^8.48.1",
     "@vitejs/plugin-vue": "^6.0.2",
-    "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.6.0",
     "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.8.1",
@@ -90,7 +89,7 @@
     "lint-staged": "^12.5.0",
     "minimist": "^1.2.7",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.6.2",
+    "oxfmt": "^0.28.0",
     "rollup": "^4.52.5",
     "rollup-plugin-node-builtins": "^2.1.2",
     "rollup-plugin-node-globals": "^1.4.0",
