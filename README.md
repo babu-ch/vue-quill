@@ -55,10 +55,10 @@ App.vue
     <img src="https://img.shields.io/npm/l/vue-quill-next" alt="License">
   </a>
   <a href="https://github.com/babu-ch/vue-quill/actions" title="Checks" target="_blank" rel="noopener noreferrer">
-    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/vueup/vue-quill/release-vue-quill.yml?branch=master&logo=github">
+    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/babu-ch/vue-quill/release-vue-quill.yml?branch=master&logo=github">
   </a>
   <a href="https://github.com/babu-ch/vue-quill" title="Last commit" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/github/last-commit/vueup/vue-quill?logo=github" alt="Last commit">
+    <img src="https://img.shields.io/github/last-commit/babu-ch/vue-quill?logo=github" alt="Last commit">
   </a>
   <a href="https://github.com/babu-ch/vue-quill" title="Github Repo Stars" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/github/stars/vueup/vue-quill?style=social" alt="Github Repo Stars">
