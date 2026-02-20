@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url'
 import { createRequire } from 'module'
 import { defineConfig } from 'rolldown'
 import nodePolyfills from '@rolldown/plugin-node-polyfills'
+import { dts } from 'rolldown-plugin-dts'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -78,6 +79,27 @@ if (process.env.NODE_ENV === 'production') {
       packageConfigs.push(createMinifiedConfig(format))
     }
   })
+}
+
+if (process.env.TYPES) {
+  const entryFile = path.resolve(pkgDir, 'src/index.ts')
+  const dtsExternalPrefixes = [
+    ...Object.keys(pkg.dependencies || {}),
+    ...Object.keys(pkg.peerDependencies || {}),
+  ]
+  packageConfigs.push(
+    defineConfig({
+      input: entryFile,
+      external: (id) =>
+        dtsExternalPrefixes.some((ext) => id === ext || id.startsWith(ext + '/')),
+      plugins: [dts({ tsconfig: path.resolve(__dirname, 'tsconfig.json'), eager: true })],
+      output: {
+        dir: resolve('dist'),
+        format: 'esm',
+        entryFileNames: `${name}.d.ts`,
+      },
+    })
+  )
 }
 
 export default packageConfigs
