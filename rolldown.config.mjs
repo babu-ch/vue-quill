@@ -92,7 +92,7 @@ if (process.env.TYPES) {
       input: entryFile,
       external: (id) =>
         dtsExternalPrefixes.some((ext) => id === ext || id.startsWith(ext + '/')),
-      plugins: [dts({ tsconfig: path.resolve(__dirname, 'tsconfig.json'), eager: true })],
+      plugins: [dts({ tsconfig: path.resolve(__dirname, 'tsconfig.json') })],
       output: {
         dir: resolve('dist'),
         format: 'esm',

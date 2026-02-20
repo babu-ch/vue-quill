@@ -129,6 +129,8 @@ npm run build -- vue-quill --formats cjs
       if (extraDts.length === 1) {
         const chunkPath = path.resolve(distDir, extraDts[0])
         await fs.move(chunkPath, mainDts, { overwrite: true })
+      } else if (extraDts.length > 1) {
+        logger.warning(target, `Unexpected .d.ts chunks: ${extraDts.join(', ')} — manual inspection required`)
       }
     }
     if (buildAssets && assets.css) {

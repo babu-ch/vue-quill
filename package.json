@@ -40,7 +40,7 @@
     "dev": "npx ts-node scripts/dev.ts",
     "build": "npx ts-node scripts/build.ts",
     "build:all": "npm run build -- vue-quill-next --types --assets",
-    "size": "npx ts-node scripts/build.ts vue-quill size-check -p -f global --assets",
+    "size": "npx ts-node scripts/build.ts vue-quill-next size-check -p -f global --assets",
     "lint": "eslint --ext .ts packages/*/src/**/*.ts",
     "format": "oxfmt --write \"packages/**/*.ts?(x)\"",
     "release": "npx ts-node scripts/release.ts",
@@ -55,7 +55,6 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@microsoft/api-extractor": "^7.28.4",
     "@rolldown/plugin-node-polyfills": "^1.0.3",
     "@rushstack/eslint-patch": "^1.14.1",
     "@semantic-release/changelog": "^6.0.1",
