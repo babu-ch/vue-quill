@@ -26,7 +26,6 @@ npm run build -- vue-quill --formats cjs
     fuzzyMatchTarget,
     checkBuildSize,
     runParallel,
-    generateTypes,
   } = require('./utils')
 
   const args = require('minimist')(process.argv.slice(2))
@@ -56,7 +55,7 @@ npm run build -- vue-quill --formats cjs
     const matchedTargets: string[] = fuzzyMatchTarget(
       allTargets,
       targets,
-      buildAllMatching
+      buildAllMatching,
     )
     logger.header(matchedTargets, 'BUILD PACKAGES')
     await buildAll(matchedTargets)
@@ -68,7 +67,7 @@ npm run build -- vue-quill --formats cjs
   }
 
   async function build(target: string) {
-    const rollupConfig = path.resolve(rootDir, 'rollup.config.mjs')
+    const rolldownConfig = path.resolve(rootDir, 'rolldown.config.mjs')
     const pkgDir = getPackageDir(target)
     const pkg = getPackageJson(target)
 
@@ -76,7 +75,7 @@ npm run build -- vue-quill --formats cjs
     if (isRelease && pkg.private) {
       logger.warning(
         target,
-        `Skip private package (${target}) in release build`
+        `Skip private package (${target}) in release build`,
       )
       return
     }
@@ -97,9 +96,9 @@ npm run build -- vue-quill --formats cjs
     await execa(
       'npx',
       [
-        'rollup',
+        'rolldown',
         '--config',
-        rollupConfig,
+        rolldownConfig,
         '--environment',
         [
           `COMMIT:${commit}`,
@@ -114,10 +113,26 @@ npm run build -- vue-quill --formats cjs
           .filter(Boolean)
           .join(','),
       ],
-      { stdio: 'inherit' }
+      { stdio: 'inherit' },
     )
 
-    if (hasTypes && pkg.types) await generateTypes(target)
+    // rolldown-plugin-dts splits .d.ts into chunks but omits inter-chunk re-export
+    // in the entry chunk (entry has `export { QuillEditor }` without importing it,
+    // causing TS2304). When exactly one extra chunk exists, it contains the complete
+    // declarations, so replace the broken entry with it.
+    if (hasTypes && pkg.types) {
+      const distDir = `${pkgDir}/dist`
+      const mainDts = path.resolve(distDir, `${target}.d.ts`)
+      const extraDts = fs
+        .readdirSync(distDir)
+        .filter((f: string) => f.endsWith('.d.ts') && f !== `${target}.d.ts`)
+      if (extraDts.length === 1) {
+        const chunkPath = path.resolve(distDir, extraDts[0])
+        await fs.move(chunkPath, mainDts, { overwrite: true })
+      } else if (extraDts.length > 1) {
+        logger.warning(target, `Unexpected .d.ts chunks: ${extraDts.join(', ')} — manual inspection required`)
+      }
+    }
     if (buildAssets && assets.css) {
       const buildAssetsTs = await path.resolve(__dirname, 'buildAssets.ts')
       const commands = ['ts-node', buildAssetsTs, target]
