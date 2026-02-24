@@ -10,7 +10,7 @@ import DemoEditor from './demo/DemoEditor.vue'
           <header class="text-center pb-5">
             <h2 id="demo" class="font-semibold border-none mb-2">Interactive Demo</h2>
             <p class="mx-auto max-w-lg my-2">
-              What you see is what you get. Try out our interactive demo and discover all the features packed into VueQuill.
+              What you see is what you get. Try out our interactive demo and discover all the features packed into VueQuillNext.
             </p>
           </header>
           <ClientOnly>

@@ -3,14 +3,14 @@
 <div class="replaceable-area">
 
 ::: warning
-🚀 **VueQuill** is in **@beta** version! Currently the focus is on making VueQuill stable and feature complete first. It is not recommended to use this for anything serious yet. Some of its features are not "finalized" and will have breaking changes over time as we discover better solutions.
+🚀 **VueQuillNext** is in **@beta** version! Currently the focus is on making VueQuill stable and feature complete first. It is not recommended to use this for anything serious yet. Some of its features are not "finalized" and will have breaking changes over time as we discover better solutions.
 :::
 
 </div>
 
-## What is VueQuill
+## What is VueQuillNext
 
-**VueQuill** is a **Component** for building rich text editors, powered by Vue 3 and Quill.
+**VueQuillNext** is a **Component** for building rich text editors, powered by Vue 3 and Quill.
 
 ## What is Quill
 

@@ -1,15 +1,15 @@
 import 'dotenv/config'
 import { defineConfig } from 'vitepress'
 
-const ogDescription = 'VueQuill Rich Text Editor for Vue 3'
+const ogDescription = 'VueQuillNext Rich Text Editor for Vue 3'
 const ogImage = 'https://babu-ch.github.io/vue-quill/og-image.png'
-const ogTitle = 'VueQuill'
+const ogTitle = 'VueQuillNext'
 const ogUrl = 'https://babu-ch.github.io/vue-quill/'
 
 export default defineConfig({
   base: '/vue-quill/',
   lang: 'en-US',
-  title: 'VueQuill',
+  title: 'VueQuillNext',
   description: 'Rich Text Editor Component for Vue 3.',
   head: [
     [
@@ -52,14 +52,14 @@ export default defineConfig({
     footer: {
       message: 'Released under the MIT License.',
       copyright:
-        'Copyright © 2020-present Luthfi Masruri & VueQuill Contributors',
+        'Copyright © 2020-present Luthfi Masruri & VueQuillNext Contributors',
     },
 
     nav: [
       { text: 'Guide', link: '/guide/' },
       { text: 'API Reference', link: '/api/' },
       {
-        text: 'Support VueQuill',
+        text: 'Support VueQuillNext',
         items: [
           {
             text: 'Patreon',

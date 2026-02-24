@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { defineComponent, watch, ref } from 'vue'
+import { watch, ref } from 'vue'
+import Delta from 'quill-delta'
 import VOptions from './VOptions.vue'
 import { deltaContent } from './delta-content'
 
 const myEditor = ref()
-const myContent = ref(deltaContent)
+const myContent = ref(new Delta(deltaContent))
 
 // ============ OPTIONS =====================
 const selectedTheme = ref<string>('snow')
@@ -63,6 +64,6 @@ watch([selectedTheme, selectedToolbar], () => {
   border: none;
 }
 img {
-  display: inline-block !important; 
+  display: inline-block !important;
 }
 </style>

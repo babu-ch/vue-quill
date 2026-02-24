@@ -1,7 +1,7 @@
 export const deltaContent = {
   ops: [
     {
-      insert: 'VueQuill Rich Text Editor',
+      insert: 'VueQuillNext Rich Text Editor',
     },
     {
       attributes: {
@@ -24,7 +24,7 @@ export const deltaContent = {
         background: '#ffffff',
         link: 'https://babu-ch.github.io/vue-quill/',
       },
-      insert: 'VueQuill',
+      insert: 'VueQuillNext',
     },
     {
       attributes: {
@@ -149,7 +149,7 @@ export const deltaContent = {
       insert: 'Fully Typescript:',
     },
     {
-      insert: ' VueQuill source code is written entirely in TypeScript.',
+      insert: ' VueQuillNext source code is written entirely in TypeScript.',
     },
     {
       attributes: {
