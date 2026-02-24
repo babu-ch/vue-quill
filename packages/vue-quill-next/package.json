@@ -41,7 +41,7 @@
   "bugs": {
     "url": "https://github.com/babu-ch/vue-quill/issues"
   },
-  "homepage": "https://github.com/babu-ch/vue-quill#readme",
+  "homepage": "https://babu-ch.github.io/vue-quill/",
   "dependencies": {
     "quill": "^2.0.3",
     "quill-delta": "^5.1.0"
