@@ -9,6 +9,21 @@
   
   ::: warning
   Your content and content type must match, if you want to use `html` as your content you must set your `contentType` to `html`, as well as `text`.
+
+  When using the default `contentType="delta"`, pass a `Delta` instance — not a plain object. Passing `{ ops: [...] }` directly will cause a runtime error.
+
+  ~~~ vue
+  <script setup>
+  import { ref } from 'vue'
+  import Delta from 'quill-delta'
+
+  // correct
+  const content = ref(new Delta({ ops: [{ insert: 'Hello\n' }] }))
+
+  // incorrect — causes "delta.slice is not a function" error
+  // const content = ref({ ops: [{ insert: 'Hello\n' }] })
+  </script>
+  ~~~
   :::
 
 ## content

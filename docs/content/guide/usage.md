@@ -57,3 +57,59 @@ export default {
 The component itself does not include any CSS theme. You'll need to include it separately:
 `import 'vue-quill-next/dist/vue-quill.snow.css'` or `import 'vue-quill-next/dist/vue-quill.bubble.css'`
 :::
+
+## Using v-model:content
+
+Use `v-model:content` for two-way binding of the editor content. The content type must match the `contentType` prop.
+
+**With HTML (recommended for simplicity):**
+
+``` vue
+<script setup>
+import { ref } from 'vue'
+import { QuillEditor } from 'vue-quill-next'
+
+const content = ref('<p>Hello World</p>')
+</script>
+
+<template>
+  <QuillEditor v-model:content="content" content-type="html" theme="snow" />
+</template>
+```
+
+**With Delta (default):**
+
+When using the default `contentType="delta"`, you must pass a `Delta` instance — not a plain object.
+
+``` vue
+<script setup>
+import { ref } from 'vue'
+import Delta from 'quill-delta'
+import { QuillEditor } from 'vue-quill-next'
+
+const content = ref(new Delta({ ops: [{ insert: 'Hello World\n' }] }))
+</script>
+
+<template>
+  <QuillEditor v-model:content="content" theme="snow" />
+</template>
+```
+
+::: warning
+Passing a plain object `{ ops: [...] }` instead of a `Delta` instance when `contentType="delta"` will cause a runtime error. Always use `new Delta(...)` or switch to `content-type="html"`.
+:::
+
+**With plain text:**
+
+``` vue
+<script setup>
+import { ref } from 'vue'
+import { QuillEditor } from 'vue-quill-next'
+
+const content = ref('Hello World')
+</script>
+
+<template>
+  <QuillEditor v-model:content="content" content-type="text" theme="snow" />
+</template>
+```
