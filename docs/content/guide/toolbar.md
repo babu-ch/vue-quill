@@ -5,7 +5,7 @@ There are 3 ways to configure the toolbar:
 
 ## Pre-Configure Toolbar Options
 
-VueQuill provides 3 pre-configured toolbar options `essential`, `minimal`, `full`, and `""` to use default options.
+VueQuillNext provides 3 pre-configured toolbar options `essential`, `minimal`, `full`, and `""` to use default options.
 
 ~~~ vue
 <template>

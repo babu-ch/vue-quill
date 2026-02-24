@@ -14,11 +14,11 @@ VueQuill ships as a UMD module that is accessible in the browser. When loaded in
 <!-- include VueJS first -->
 <script src="https://unpkg.com/vue@next"></script>
 
-<!-- use the latest VueQuill release -->
+<!-- use the latest VueQuillNext release -->
 <script src="https://unpkg.com/vue-quill-next@latest"></script>
 <link rel="stylesheet" href="https://unpkg.com/vue-quill-next@latest/dist/vue-quill.snow.prod.css">
 
-<!-- or point to a specific VueQuill release -->
+<!-- or point to a specific VueQuillNext release -->
 <script src="https://unpkg.com/vue-quill-next@version"></script>
 <link rel="stylesheet" href="https://unpkg.com/vue-quill-next@version/dist/vue-quill.snow.prod.css">
 ```
