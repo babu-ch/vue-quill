@@ -12,7 +12,7 @@ import 'vue-quill-next/dist/vue-quill.bubble.css';
 // you can use both themes at the same time and use them interchangeably
 ~~~
 
-These stylesheets can be found in the Quill distribution, but for convenience, they are also linked in VueQuill's `dist` folder.
+These stylesheets can be found in the Quill distribution, but for convenience, they are also linked in VueQuillNext's `dist` folder.
 
 Then, pass the name of the theme to the [`theme prop`](../api/index.md).
 

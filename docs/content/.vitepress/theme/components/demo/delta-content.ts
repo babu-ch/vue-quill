@@ -149,7 +149,7 @@ export const deltaContent = {
       insert: 'Fully Typescript:',
     },
     {
-      insert: ' VueQuill source code is written entirely in TypeScript.',
+      insert: ' VueQuillNext source code is written entirely in TypeScript.',
     },
     {
       attributes: {
