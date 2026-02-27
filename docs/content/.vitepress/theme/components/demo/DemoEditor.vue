@@ -53,6 +53,7 @@ watch([selectedTheme, selectedToolbar], () => {
         v-model:content="myContent"
         :theme="selectedTheme"
         :toolbar="selectedToolbar"
+        placeholder="Start typing..."
       >
       </QuillEditor>
     </div>
