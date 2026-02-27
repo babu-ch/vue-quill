@@ -75,7 +75,7 @@ if (process.env.NODE_ENV === 'production') {
     if (format === 'cjs') {
       packageConfigs.push(createProductionConfig(format))
     }
-    if (/^(global|esm-browser)?/.test(format)) {
+    if (/^(global|esm-browser)/.test(format)) {
       packageConfigs.push(createMinifiedConfig(format))
     }
   })
