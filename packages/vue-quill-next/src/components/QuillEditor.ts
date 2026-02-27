@@ -157,6 +157,16 @@ export const QuillEditor = defineComponent({
           e.preventDefault()
         },
       )
+      // https://github.com/slab/quill/issues/4021
+      // Patch for Quill v2 bug: placeholder not hidden during IME composition
+      quill.root.addEventListener('compositionstart', () => {
+        quill?.root.classList.remove('ql-blank')
+      })
+      quill.root.addEventListener('compositionend', () => {
+        if (!quill?.root.textContent?.trim()) {
+          quill?.root.classList.add('ql-blank')
+        }
+      })
       // Emit ready event
       ctx.emit('ready', quill)
     }
