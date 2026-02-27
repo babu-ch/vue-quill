@@ -1,6 +1,6 @@
 <template>
   <h1>Basic Example</h1>
-  <QuillEditor v-model:content="content" />
+  <QuillEditor v-model:content="content" placeholder="type something..."/>
 </template>
 
 <script lang="ts">
