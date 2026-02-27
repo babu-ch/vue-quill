@@ -11,7 +11,7 @@ Only use `options` prop when you register QuillEditor component locally
 - **Usage:**
   ``` javascript
   import { QuillEditor } from 'vue-quill-next'
-  import 'vue-quill-next/dist/vue-quill.snow.css';
+  import 'vue-quill-next/dist/vue-quill-next.snow.css';
 
   export default {
     components: {

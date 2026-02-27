@@ -6,9 +6,9 @@ Themes primarily control the visual look of Quill through its CSS stylesheet, an
 To activate a theme, import the stylesheet for the themes you want to use.
 
 ~~~ javascript
-import 'vue-quill-next/dist/vue-quill.snow.css';
+import 'vue-quill-next/dist/vue-quill-next.snow.css';
 // OR | AND
-import 'vue-quill-next/dist/vue-quill.bubble.css';
+import 'vue-quill-next/dist/vue-quill-next.bubble.css';
 // you can use both themes at the same time and use them interchangeably
 ~~~
 

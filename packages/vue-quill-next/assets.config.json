@@ -2,15 +2,15 @@
   "css": [
     {
       "input": "./node_modules/quill/assets/core.styl",
-      "output": "./dist/vue-quill.core.css"
+      "output": "./dist/vue-quill-next.core.css"
     },
     {
       "input": "./node_modules/quill/assets/bubble.styl",
-      "output": "./dist/vue-quill.bubble.css"
+      "output": "./dist/vue-quill-next.bubble.css"
     },
     {
       "input": "./src/assets/snow.styl",
-      "output": "./dist/vue-quill.snow.css"
+      "output": "./dist/vue-quill-next.snow.css"
     }
   ]
 }

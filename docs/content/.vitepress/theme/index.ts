@@ -12,9 +12,9 @@ const QuillEditor = defineAsyncComponent({
   loadingComponent: Loading,
 })
 
-import 'vue-quill-next/dist/vue-quill.core.css' // import styles
-import 'vue-quill-next/dist/vue-quill.bubble.css' // for bubble theme
-import 'vue-quill-next/dist/vue-quill.snow.css' // for snow theme
+import 'vue-quill-next/dist/vue-quill-next.core.css' // import styles
+import 'vue-quill-next/dist/vue-quill-next.bubble.css' // for bubble theme
+import 'vue-quill-next/dist/vue-quill-next.snow.css' // for snow theme
 
 export default {
   ...Theme,

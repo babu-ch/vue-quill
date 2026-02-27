@@ -12,7 +12,7 @@ main.ts
 import { createApp } from 'vue'
 import App from './App.vue'
 import {QuillEditor} from 'vue-quill-next'
-import 'vue-quill-next/dist/vue-quill.snow.css';
+import 'vue-quill-next/dist/vue-quill-next.snow.css';
 
 const app = createApp(App)
 
