@@ -11,7 +11,12 @@ const { mockSetContents, mockClipboardConvert } = vi.hoisted(() => ({
 vi.mock('quill', () => {
   /* eslint-disable-next-line no-unused-vars */
   function MockQuill(this: Record<string, unknown>) {
-    this.root = { innerHTML: '' }
+    this.root = {
+      innerHTML: '',
+      textContent: '',
+      addEventListener: vi.fn(),
+      classList: { add: vi.fn(), remove: vi.fn() },
+    }
     this.clipboard = { convert: mockClipboardConvert }
     this.setContents = mockSetContents
     this.on = vi.fn()
