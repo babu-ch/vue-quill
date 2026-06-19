@@ -30,3 +30,7 @@ features:
     title: Easy To Use
     details: Straightforward implementation through a simple API.
 ---
+
+::: warning Deprecated
+**VueQuillNext (`vue-quill-next`) is winding down.** The original [@vueup/vue-quill](https://www.npmjs.com/package/@vueup/vue-quill) is actively maintained again — please use it instead. Both target Quill v2, so migrating is mostly a package/import rename.
+:::
