@@ -2,8 +2,8 @@
 
 <div class="replaceable-area">
 
-::: warning
-🚀 **VueQuillNext** is in **@beta** version! Currently the focus is on making VueQuill stable and feature complete first. It is not recommended to use this for anything serious yet. Some of its features are not "finalized" and will have breaking changes over time as we discover better solutions.
+::: warning Deprecated
+**VueQuillNext (`vue-quill-next`) is winding down.** The original [@vueup/vue-quill](https://www.npmjs.com/package/@vueup/vue-quill) is actively maintained again — please use it instead. Both target Quill v2, so migrating is mostly a package/import rename.
 :::
 
 </div>
